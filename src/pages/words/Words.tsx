@@ -2,7 +2,7 @@ import { useState } from "react";
 import Select, { SingleValue, Options, StylesConfig } from "react-select";
 import { useMatches } from "react-router-dom";
 
-import { Container, MainSection } from "../../components";
+import { Container, Head, MainSection } from "../../components";
 import { albums } from "../../data";
 import { AlbumName } from "../../data/albums";
 import { theme } from "../../theme";
@@ -48,6 +48,11 @@ const Words = () => {
 
   return (
     <Container>
+      <Head
+        path="/words"
+        pageTitle="Vermintide - Official Lyrics"
+        pageDescription="Official lyrics by Vermintide"
+      />
       <MainSection>
         <div style={{ margin: "30px 15px" }}>
           <div

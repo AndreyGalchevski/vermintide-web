@@ -1,4 +1,4 @@
-import { Container, MainSection } from "../../components";
+import { Container, Head, MainSection } from "../../components";
 import { visuals } from "../../data";
 import VisualsContainer, {
   HugeVideoIFrame,
@@ -8,6 +8,11 @@ import VisualsContainer, {
 
 const Visuals = () => (
   <Container>
+    <Head
+      path="/visuals"
+      pageTitle="Vermintide - Official Music Video Streams"
+      pageDescription="Official music video streams by Vermintide"
+    />
     <MainSection>
       <VisualsContainer>
         <VideoRow>

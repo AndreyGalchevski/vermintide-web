@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { Container, MainSection } from "../../components";
+import { Container, MainSection, Head } from "../../components";
 import { events } from "../../data";
 import EventsContainer, { EventCard, EventImage } from "./Events.styled";
 
@@ -14,6 +14,11 @@ const formatEventDate = (date: Date) =>
 
 const Events = () => (
   <Container>
+    <Head
+      path="/events"
+      pageTitle="Vermintide - Official Tour Dates"
+      pageDescription="Official past and future events and gigs by Vermintide"
+    />
     <MainSection>
       <EventsContainer>
         {events.map(({ name, image, date, city, country, venue, fbEvent }) => (

@@ -1,4 +1,4 @@
-import { Container, MainSection } from "../../components";
+import { Container, Head, MainSection } from "../../components";
 import { albums } from "../../data";
 import SoundsContainer, {
   AlbumIFrame,
@@ -11,6 +11,11 @@ import SoundsContainer, {
 
 const Sounds = () => (
   <Container>
+    <Head
+      path="/sounds"
+      pageTitle="Vermintide - Official Streams And Downloads"
+      pageDescription="Official music streams and downloads by Vermintide"
+    />
     <MainSection>
       <SoundsContainer>
         {albums.map(({ name, artworkURL, streamingURL, purchaseURL }) => (
