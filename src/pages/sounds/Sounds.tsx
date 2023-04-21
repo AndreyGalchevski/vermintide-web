@@ -37,9 +37,9 @@ const Sounds = () => (
               <PurchaseButton to={purchaseURL} target="_blank">
                 Buy
               </PurchaseButton>
-              {/* <WordsButton to={{ pathname: "/words", search: { album: name } }}>
+              <WordsButton to={{ pathname: "/words", search: `album=${name}` }}>
                 Words
-              </WordsButton> */}
+              </WordsButton>
             </div>
           </AlbumContainer>
         ))}

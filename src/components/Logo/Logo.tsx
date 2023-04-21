@@ -1,4 +1,4 @@
-import React, { FunctionComponent, SVGProps } from 'react';
+import { FunctionComponent, SVGProps } from "react";
 
 const Logo: FunctionComponent<SVGProps<SVGPathElement>> = (props) => (
   <svg

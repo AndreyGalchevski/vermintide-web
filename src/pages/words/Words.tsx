@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Select, { SingleValue, Options, StylesConfig } from "react-select";
-import { useMatches } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 import { Container, Head, MainSection } from "../../components";
 import { albums } from "../../data";
@@ -36,10 +36,10 @@ const selectStyles: StylesConfig<AlbumOption> = {
 };
 
 const Words = () => {
-  const matches = useMatches();
+  const [params] = useSearchParams();
 
   const [selectedAlbum, setSelectedAlbum] = useState<SingleValue<AlbumOption>>(
-    options.find((it) => it.value === matches[0].params.album) || options[0]
+    options.find((it) => it.value === params.get("album")) || options[0]
   );
 
   const handleAlbumChange = (option: AlbumOption | null) => {
