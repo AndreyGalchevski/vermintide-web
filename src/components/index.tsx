@@ -7,6 +7,8 @@ import Social from "./Social";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
 import Head from "./Head";
+import { MasonryLayout, MasonryBrick } from "./Masonry";
+import Card from "./Card";
 
 export {
   Burger,
@@ -18,4 +20,7 @@ export {
   Logo,
   Navbar,
   Head,
+  MasonryLayout,
+  MasonryBrick,
+  Card,
 };

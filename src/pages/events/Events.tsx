@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
 
-import { Container, MainSection, Head } from "../../components";
+import {
+  Container,
+  MainSection,
+  Head,
+  Card,
+  MasonryLayout,
+  MasonryBrick,
+} from "../../components";
 import { events } from "../../data";
-import EventsContainer, { EventCard, EventImage } from "./Events.styled";
+import { EventImage } from "./Events.styled";
 
 const formatEventDate = (date: Date) =>
   `${date.toDateString()} • ${date
@@ -19,12 +26,12 @@ const Events = () => (
       pageTitle="Vermintide - Official Tour Dates"
       pageDescription="Official past and future events and gigs by Vermintide"
     />
-    <MainSection>
-      <EventsContainer>
+    <MainSection style={{ paddingTop: "7em" }}>
+      <MasonryLayout>
         {events.map(({ name, image, date, city, country, venue, fbEvent }) => (
-          <EventCard key={name}>
-            <EventImage src={image} />
-            <div style={{ padding: "16px 16px" }}>
+          <MasonryBrick key={name}>
+            <Card>
+              <EventImage src={image} />
               <h2>{name}</h2>
               <time>{formatEventDate(date)}</time>
               <p>
@@ -36,10 +43,10 @@ const Events = () => (
                   <b>Facebook Event</b>
                 </Link>
               )}
-            </div>
-          </EventCard>
+            </Card>
+          </MasonryBrick>
         ))}
-      </EventsContainer>
+      </MasonryLayout>
     </MainSection>
   </Container>
 );

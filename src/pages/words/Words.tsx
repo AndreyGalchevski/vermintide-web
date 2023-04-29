@@ -2,13 +2,18 @@ import { useState } from "react";
 import Select, { SingleValue, Options, StylesConfig } from "react-select";
 import { useSearchParams } from "react-router-dom";
 
-import { Container, Head, MainSection } from "../../components";
+import {
+  Card,
+  Container,
+  Head,
+  MainSection,
+  MasonryBrick,
+  MasonryLayout,
+} from "../../components";
 import { albums } from "../../data";
 import { AlbumName } from "../../data/albums";
 import { theme } from "../../theme";
-import { Content, WordCard } from "./Words.styled";
-import { MasonryLayout } from "../../components/Masonry";
-import { MasonryBrick } from "../../components/Masonry";
+import { Content } from "./Words.styled";
 
 export interface AlbumOption {
   value: AlbumName;
@@ -78,10 +83,10 @@ const Words = () => {
               .find((it) => it.name === selectedAlbum?.value)
               ?.lyrics.map(({ title, content }) => (
                 <MasonryBrick key={title}>
-                  <WordCard>
+                  <Card>
                     <h2>{title}</h2>
                     <Content>{content}</Content>
-                  </WordCard>
+                  </Card>
                 </MasonryBrick>
               ))}
           </MasonryLayout>
