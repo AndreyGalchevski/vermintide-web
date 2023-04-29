@@ -2,6 +2,7 @@ import { Logo, Social, Container, MainSection, Head } from "../../components";
 
 const Home = () => (
   <Container>
+    <span style={{ opacity: "0.01", userSelect: "none" }}>Test</span>
     <Head
       path=""
       pageTitle="Vermintide - Official Website"
