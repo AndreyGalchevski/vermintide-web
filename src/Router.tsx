@@ -1,7 +1,14 @@
+import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 
 import Root from "./Root";
-import { Events, Home, Sounds, Visuals, Words } from "./pages";
+import Suspenseful from "./components/Suspenseful";
+
+const Home = lazy(() => import("./pages/home"));
+const Events = lazy(() => import("./pages/events"));
+const Sounds = lazy(() => import("./pages/sounds"));
+const Visuals = lazy(() => import("./pages/visuals"));
+const Words = lazy(() => import("./pages/words"));
 
 const Router = createBrowserRouter([
   {
@@ -9,26 +16,46 @@ const Router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: (
+          <Suspenseful>
+            <Home />
+          </Suspenseful>
+        ),
       },
       {
         path: "events",
-        element: <Events />,
+        element: (
+          <Suspenseful>
+            <Events />
+          </Suspenseful>
+        ),
         handle: "Events",
       },
       {
         path: "sounds",
-        element: <Sounds />,
+        element: (
+          <Suspenseful>
+            <Sounds />
+          </Suspenseful>
+        ),
         handle: "Sounds",
       },
       {
         path: "visuals",
-        element: <Visuals />,
+        element: (
+          <Suspenseful>
+            <Visuals />
+          </Suspenseful>
+        ),
         handle: "Visuals",
       },
       {
         path: "words",
-        element: <Words />,
+        element: (
+          <Suspenseful>
+            <Words />
+          </Suspenseful>
+        ),
         handle: "Words",
       },
     ],
