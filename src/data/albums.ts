@@ -1,4 +1,4 @@
-export type AlbumName = 'Meaningless Convulsions' | 'Ashamed Of My Species';
+export type AlbumName = "Meaningless Convulsions" | "Ashamed Of My Species";
 
 export interface Word {
   title: string;
@@ -15,15 +15,15 @@ export interface Album {
 
 const sounds: Array<Album> = [
   {
-    name: 'Ashamed Of My Species',
+    name: "Ashamed Of My Species",
     streamingURL:
-      'https://open.spotify.com/embed/album/3LGuV5M5zvP0tor8snYpiD?utm_source=generator',
+      "https://open.spotify.com/embed/album/3LGuV5M5zvP0tor8snYpiD?utm_source=generator",
     artworkURL:
-      'https://res.cloudinary.com/dqvimfd8b/image/upload/v1682022299/vermintide/sounds/Ashamed-Of-My-Species.png',
-    purchaseURL: 'https://vermintide.bandcamp.com/album/ashamed-of-my-species',
+      "https://res.cloudinary.com/dqvimfd8b/image/upload/f_auto/v1682022299/vermintide/sounds/Ashamed-Of-My-Species.png",
+    purchaseURL: "https://vermintide.bandcamp.com/album/ashamed-of-my-species",
     lyrics: [
       {
-        title: 'How Dare You?',
+        title: "How Dare You?",
         content: `
 How dare you doubt my god
 Saying my beliefs are flawed 
@@ -59,7 +59,7 @@ All infidels die
   `,
       },
       {
-        title: 'Empty Oceans',
+        title: "Empty Oceans",
         content: `
 Micro-plastics fill up the fish
 So they starve to death
@@ -84,7 +84,7 @@ Oceans
   `,
       },
       {
-        title: 'Arbitrary Lines',
+        title: "Arbitrary Lines",
         content: `
 Kill for the history
 Kill for the pride
@@ -114,7 +114,7 @@ Hate!
   `,
       },
       {
-        title: 'Sea Of Vermin',
+        title: "Sea Of Vermin",
         content: `
 Sea of
 Vermin
@@ -139,7 +139,7 @@ I'm ashamed of my species
   `,
       },
       {
-        title: 'Trauma Congenital',
+        title: "Trauma Congenital",
         content: `
 Subconscious compulsive urge to breed
 Turns your blind eye to all those in need
@@ -167,7 +167,7 @@ Destined to be deprived
   `,
       },
       {
-        title: 'NHI',
+        title: "NHI",
         content: `
 Let them rot, let them reek
 Cast out by society
@@ -191,7 +191,7 @@ Cast out by society
   `,
       },
       {
-        title: 'The Bridge Of Death',
+        title: "The Bridge Of Death",
         content: `
 Thoughts of failure
 Fill you with dread
@@ -219,7 +219,7 @@ Jump!
   `,
       },
       {
-        title: 'Pierced Through The Neck',
+        title: "Pierced Through The Neck",
         content: `
 Pierced through the neck
 Pierced through the neck
@@ -257,7 +257,7 @@ Pierced through the neck
   `,
       },
       {
-        title: 'Hell Is A Place On Earth',
+        title: "Hell Is A Place On Earth",
         content: `
 Female 
 Genital
@@ -283,7 +283,7 @@ And infibulation
   `,
       },
       {
-        title: 'Russian Battleship Fuck Off',
+        title: "Russian Battleship Fuck Off",
         content: `
 Русский военный корабль иди на хуй
 
@@ -295,7 +295,7 @@ Off
   `,
       },
       {
-        title: 'Total Control',
+        title: "Total Control",
         content: `
 All your actions captured by
 (The) omnipresent cyber eye
@@ -329,15 +329,16 @@ Control
     ],
   },
   {
-    name: 'Meaningless Convulsions',
+    name: "Meaningless Convulsions",
     streamingURL:
-      'https://open.spotify.com/embed/album/6Ay1zvYut0KnIHDIsOco3m?utm_source=generator',
+      "https://open.spotify.com/embed/album/6Ay1zvYut0KnIHDIsOco3m?utm_source=generator",
     artworkURL:
-      'https://res.cloudinary.com/dqvimfd8b/image/upload/v1682022299/vermintide/sounds/Meaningless-Convulsions.png',
-    purchaseURL: 'https://vermintide.bandcamp.com/album/meaningless-convulsions',
+      "https://res.cloudinary.com/dqvimfd8b/image/upload/f_auto/v1682022299/vermintide/sounds/Meaningless-Convulsions.png",
+    purchaseURL:
+      "https://vermintide.bandcamp.com/album/meaningless-convulsions",
     lyrics: [
       {
-        title: 'I Vomit',
+        title: "I Vomit",
         content: `
 Primitive
 Tradition
@@ -374,7 +375,7 @@ Perverted mutilation of innocent
   `,
       },
       {
-        title: 'Castrate Rapist Scum',
+        title: "Castrate Rapist Scum",
         content: `
 Ravenous lust
 No empathy
@@ -412,7 +413,7 @@ Rapist scum
   `,
       },
       {
-        title: 'Earth Stays',
+        title: "Earth Stays",
         content: `
 Human ignorance
 And will to power
@@ -441,7 +442,7 @@ Earth stays
   `,
       },
       {
-        title: 'Lead',
+        title: "Lead",
         content: `
 Barely fucking see
 Barely fucking think
@@ -541,7 +542,7 @@ For us to realize
   `,
       },
       {
-        title: 'The Depression Maze',
+        title: "The Depression Maze",
         content: `
 When your bed becomes a grave
 Tired mind frees it’s slave
@@ -573,7 +574,7 @@ Lost in the depression maze
   `,
       },
       {
-        title: 'The Plague',
+        title: "The Plague",
         content: `
 Millions die
 Everyday
