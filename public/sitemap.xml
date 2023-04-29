@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://vermintide.band/</loc>
+      <lastmod>2023-05-29</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+      <url>
+      <loc>https://vermintide.band/sounds</loc>
+      <lastmod>2023-05-29</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+      <url>
+      <loc>https://vermintide.band/words</loc>
+      <lastmod>2023-05-29</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+      <url>
+      <loc>https://vermintide.band/visuals</loc>
+      <lastmod>2023-05-29</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+      <url>
+      <loc>https://vermintide.band/events</loc>
+      <lastmod>2023-05-29</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+</urlset> 
