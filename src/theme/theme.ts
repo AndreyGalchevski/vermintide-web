@@ -6,6 +6,7 @@ const theme: VermintideTheme = {
   accent: "#c62828",
   mobile: "768px",
   small: "992px",
+  borderRadius: "10px",
 };
 
 export default theme;

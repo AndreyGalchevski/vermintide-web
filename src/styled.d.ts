@@ -7,5 +7,6 @@ declare module "styled-components" {
     accent: string;
     mobile: string;
     small: string;
+    borderRadius: string;
   }
 }

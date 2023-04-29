@@ -6,7 +6,9 @@ import { Container, Head, MainSection } from "../../components";
 import { albums } from "../../data";
 import { AlbumName } from "../../data/albums";
 import { theme } from "../../theme";
-import WordsContainer, { Content, WordCard } from "./Words.styled";
+import { Content, WordCard } from "./Words.styled";
+import { MasonryLayout } from "../../components/Masonry";
+import { MasonryBrick } from "../../components/Masonry";
 
 export interface AlbumOption {
   value: AlbumName;
@@ -71,16 +73,18 @@ const Words = () => {
               instanceId="lyrics-select"
             />
           </div>
-          <WordsContainer>
+          <MasonryLayout>
             {albums
               .find((it) => it.name === selectedAlbum?.value)
               ?.lyrics.map(({ title, content }) => (
-                <WordCard key={title}>
-                  <h2>{title}</h2>
-                  <Content>{content}</Content>
-                </WordCard>
+                <MasonryBrick key={title}>
+                  <WordCard>
+                    <h2>{title}</h2>
+                    <Content>{content}</Content>
+                  </WordCard>
+                </MasonryBrick>
               ))}
-          </WordsContainer>
+          </MasonryLayout>
         </div>
       </MainSection>
     </Container>
