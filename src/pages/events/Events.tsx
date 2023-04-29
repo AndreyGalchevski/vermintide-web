@@ -4,12 +4,11 @@ import {
   Container,
   MainSection,
   Head,
-  Card,
   MasonryLayout,
   MasonryBrick,
 } from "../../components";
 import { events } from "../../data";
-import { EventImage } from "./Events.styled";
+import { EventCard, EventImage } from "./Events.styled";
 
 const formatEventDate = (date: Date) =>
   `${date.toDateString()} • ${date
@@ -30,7 +29,7 @@ const Events = () => (
       <MasonryLayout>
         {events.map(({ name, image, date, city, country, venue, fbEvent }) => (
           <MasonryBrick key={name}>
-            <Card>
+            <EventCard>
               <EventImage src={image} />
               <h2>{name}</h2>
               <time>{formatEventDate(date)}</time>
@@ -43,7 +42,7 @@ const Events = () => (
                   <b>Facebook Event</b>
                 </Link>
               )}
-            </Card>
+            </EventCard>
           </MasonryBrick>
         ))}
       </MasonryLayout>
