@@ -19,7 +19,7 @@ const sounds: Array<Album> = [
     streamingURL:
       "https://open.spotify.com/embed/album/3LGuV5M5zvP0tor8snYpiD?utm_source=generator",
     artworkURL:
-      "https://res.cloudinary.com/dqvimfd8b/image/upload/f_auto/v1682022299/vermintide/sounds/Ashamed-Of-My-Species.png",
+      "https://res.cloudinary.com/dqvimfd8b/image/upload/f_auto,w_600/v1682022299/vermintide/sounds/Ashamed-Of-My-Species.png",
     purchaseURL: "https://vermintide.bandcamp.com/album/ashamed-of-my-species",
     lyrics: [
       {
@@ -333,7 +333,7 @@ Control
     streamingURL:
       "https://open.spotify.com/embed/album/6Ay1zvYut0KnIHDIsOco3m?utm_source=generator",
     artworkURL:
-      "https://res.cloudinary.com/dqvimfd8b/image/upload/f_auto/v1682022299/vermintide/sounds/Meaningless-Convulsions.png",
+      "https://res.cloudinary.com/dqvimfd8b/image/upload/f_auto,w_600/v1682022299/vermintide/sounds/Meaningless-Convulsions.png",
     purchaseURL:
       "https://vermintide.bandcamp.com/album/meaningless-convulsions",
     lyrics: [
