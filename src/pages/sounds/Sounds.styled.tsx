@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { VermintideTheme } from "styled-components";
 
 const SoundsContainer = styled.div`
   display: flex;
@@ -32,6 +32,9 @@ export const AlbumImage = styled.img`
   height: 330px;
   margin-bottom: 10px;
 
+  border-radius: ${({ theme }: { theme: VermintideTheme }) =>
+    theme.borderRadius};
+
   @media (min-width: ${({ theme }) => theme.mobile}) {
     width: 467px;
     height: 467px;
@@ -41,8 +44,11 @@ export const AlbumImage = styled.img`
 
 export const AlbumIFrame = styled.iframe`
   width: 330px;
-  height: 330px;
+  height: 530px;
   margin-bottom: 10px;
+
+  border-radius: ${({ theme }: { theme: VermintideTheme }) =>
+    theme.borderRadius};
 
   @media (min-width: ${({ theme }) => theme.mobile}) {
     width: 467px;

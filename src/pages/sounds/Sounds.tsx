@@ -29,8 +29,6 @@ const Sounds = () => (
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 allowFullScreen={false}
-                height="340"
-                width="100%"
               />
             </AlbumRow>
             <div style={{ display: "flex" }}>
