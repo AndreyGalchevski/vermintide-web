@@ -30,7 +30,7 @@ const Events = () => (
         {events.map(({ name, image, date, city, country, venue, fbEvent }) => (
           <MasonryBrick key={name}>
             <EventCard>
-              <EventImage src={image} />
+              <EventImage src={image} alt={`"${name}" event`} />
               <h2>{name}</h2>
               <time>{formatEventDate(date)}</time>
               <p>
