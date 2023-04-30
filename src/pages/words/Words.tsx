@@ -76,6 +76,7 @@ const Words = () => {
               onChange={handleAlbumChange}
               styles={selectStyles}
               instanceId="lyrics-select"
+              aria-label="Album selection"
             />
           </div>
           <MasonryLayout>
