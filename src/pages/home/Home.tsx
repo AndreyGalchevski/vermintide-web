@@ -8,11 +8,6 @@ const Home = () => (
     >
       Test
     </span>
-    <Head
-      path=""
-      pageTitle="Vermintide - Official Website"
-      pageDescription="Vermintide - Israeli Slamming Grindcore"
-    />
     <MainSection>
       <div style={{ marginBottom: 10 }}>
         <Logo />

@@ -82,6 +82,10 @@ const Head = ({ path, pageTitle, pageDescription }: Props) => (
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={pageDescription} />
+    <meta
+      name="twitter:image"
+      content="https://res.cloudinary.com/dqvimfd8b/image/upload/v1682075200/vermintide/og_image.png"
+    />
     <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
   </Helmet>
 );
