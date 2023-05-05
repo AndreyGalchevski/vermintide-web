@@ -6,8 +6,6 @@ const structuredData: WithContext<MusicGroup> = {
   "@type": "MusicGroup",
   "@id": "https://musicbrainz.org/artist/455707a4-a273-4b12-a26f-fcd41abef63a",
   name: "Vermintide",
-  description: "Israeli Slamming Grindcore",
-  logo: "https://res.cloudinary.com/dqvimfd8b/image/upload/v1618120314/vermintide/fb-logo.png",
   image:
     "https://res.cloudinary.com/dqvimfd8b/image/upload/v1682075200/vermintide/og_image.png",
   url: "https://vermintide.band",
