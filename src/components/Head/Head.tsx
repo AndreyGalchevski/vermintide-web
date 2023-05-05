@@ -13,7 +13,7 @@ const structuredData: WithContext<MusicGroup> = {
   sameAs: [
     "https://www.facebook.com/vermintide.band",
     "https://www.instagram.com/vermintide.band",
-    "https://www.youtube.com/channel/UCgJ586vhsKUFASCBA5RrDLw",
+    "https://www.youtube.com/@VermintideBand",
     "https://soundcloud.com/vermintide_band",
     "https://open.spotify.com/artist/1qZhVB4v4QVJweTVC3c2uB",
     "https://vermintide.bandcamp.com/",

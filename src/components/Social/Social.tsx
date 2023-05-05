@@ -1,11 +1,11 @@
-import { FunctionComponent, SVGProps } from 'react';
-import styled from 'styled-components';
+import { FunctionComponent, SVGProps } from "react";
+import styled from "styled-components";
 
-import BandcampIcon from '../icons/BandcampIcon';
-import FacebookIcon from '../icons/FacebookIcon';
-import InstagramIcon from '../icons/InstagramIcon';
-import SpotifyIcon from '../icons/SpotifyIcon';
-import YouTubeIcon from '../icons/YouTubeIcon';
+import BandcampIcon from "../icons/BandcampIcon";
+import FacebookIcon from "../icons/FacebookIcon";
+import InstagramIcon from "../icons/InstagramIcon";
+import SpotifyIcon from "../icons/SpotifyIcon";
+import YouTubeIcon from "../icons/YouTubeIcon";
 
 export const LinksContainer = styled.div`
   display: flex;
@@ -21,34 +21,34 @@ interface SocialLink {
 
 const socialLinks: Array<SocialLink> = [
   {
-    url: 'https://open.spotify.com/artist/1qZhVB4v4QVJweTVC3c2uB',
+    url: "https://open.spotify.com/artist/1qZhVB4v4QVJweTVC3c2uB",
     Icon: SpotifyIcon,
-    altText: 'Spotify',
+    altText: "Spotify",
   },
   {
-    url: 'https://vermintide.bandcamp.com',
+    url: "https://vermintide.bandcamp.com",
     Icon: BandcampIcon,
-    altText: 'Bandcamp',
+    altText: "Bandcamp",
   },
   {
-    url: 'https://www.youtube.com/channel/UCgJ586vhsKUFASCBA5RrDLw',
+    url: "https://www.youtube.com/@VermintideBand",
     Icon: YouTubeIcon,
-    altText: 'YouTube',
+    altText: "YouTube",
   },
   {
-    url: 'https://www.instagram.com/vermintide.band',
+    url: "https://www.instagram.com/vermintide.band",
     Icon: InstagramIcon,
-    altText: 'Instagram',
+    altText: "Instagram",
   },
   {
-    url: 'https://www.facebook.com/vermintide.band',
+    url: "https://www.facebook.com/vermintide.band",
     Icon: FacebookIcon,
-    altText: 'Facebook',
+    altText: "Facebook",
   },
 ];
 
 interface Props {
-  variant: 'dark' | 'light';
+  variant: "dark" | "light";
   iconSize: number;
 }
 
@@ -63,7 +63,11 @@ const Social: FunctionComponent<Props> = ({ variant, iconSize }) => (
         aria-label={altText}
         style={{ width: iconSize, margin: 15 }}
       >
-        <Icon fill={variant === 'dark' ? 'black' : 'white'} width={iconSize} height={iconSize} />
+        <Icon
+          fill={variant === "dark" ? "black" : "white"}
+          width={iconSize}
+          height={iconSize}
+        />
       </a>
     ))}
   </LinksContainer>
