@@ -1,4 +1,4 @@
-import { Logo, Social, Container, MainSection, Head } from "../../components";
+import { Logo, Social, Container, MainSection } from "../../components";
 
 const Home = () => (
   <Container>
