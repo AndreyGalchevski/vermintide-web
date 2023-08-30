@@ -23,7 +23,7 @@ const getNavLinkStyles = ({
   color: isActive ? theme.accent : theme.secondary,
 });
 
-const merchandiseShopURL = "https://shop.vermintide.band";
+const merchandiseShopURL = "https://vermintide.bandcamp.com/merch";
 
 interface Props {
   open: boolean;
