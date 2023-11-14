@@ -6,8 +6,7 @@ const structuredData: WithContext<MusicGroup> = {
   "@type": "MusicGroup",
   "@id": "https://musicbrainz.org/artist/455707a4-a273-4b12-a26f-fcd41abef63a",
   name: "Vermintide",
-  image:
-    "https://res.cloudinary.com/dqvimfd8b/image/upload/v1682075200/vermintide/og_image.png",
+  logo: "https://res.cloudinary.com/dqvimfd8b/image/upload/v1682075200/vermintide/og_image.png",
   url: "https://vermintide.band",
   genre: ["Death Metal", "Grindcore"],
   sameAs: [
